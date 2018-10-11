@@ -5,7 +5,19 @@
   <script type="text/javascript" src="./lib/bundle.js" charset="utf-8"></script>
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/application.css" />
   <link rel="shortcut icon" type="image/png" href="/icon.png"/>
-<link rel="shortcut icon" type="image/png" href="assets/image/icon.png"/>
+  <link rel="shortcut icon" type="image/png" href="assets/image/icon.png"/>
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyBPkF9A10-wUX8xmDAHMEXf0GyDTgTdw54",
+      authDomain: "project-6178831631385309562.firebaseapp.com",
+      databaseURL: "https://project-6178831631385309562.firebaseio.com",
+      projectId: "project-6178831631385309562",
+      storageBucket: "project-6178831631385309562.appspot.com",
+      messagingSenderId: "65833101358"
+    };
+    firebase.initializeApp(config);
+  </script>
 </head>
 <body>
   <h2>2048</h2>
@@ -19,12 +31,16 @@
     </div>
     <ul>
       <span></span>
+      <section> </section>
       <!-- <strong>score</strong> -->
       <!-- <span> </span> -->
       <strong class='strong'></strong>
     </ul>
     <canvas  id="myCanvas" width="400" height="400" style="border:3px solid #010329;"></canvas>
-
+    <form  class='form' style="display: none;">
+      <input  required type="text" placeholder="enter your name"/>
+      <input hidden type="button" value="Submit">
+    </form>
   </div>
 
 
