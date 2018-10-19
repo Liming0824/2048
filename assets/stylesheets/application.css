@@ -104,8 +104,11 @@ body{
 
  .links p{
    color: white;
-   font: 20px;
+   font-size: 24px;
    margin-left: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+   line-height: 2
  }
 
  .form{
