@@ -4,9 +4,11 @@
   <title> 2048 </title>
   <script type="text/javascript" src="./lib/bundle.js" charset="utf-8"></script>
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/application.css" />
-  <link rel="shortcut icon" type="image/png" href="/icon.png"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <!-- <link rel="shortcut icon" type="image/png" href="/icon.png"/> -->
   <link rel="shortcut icon" type="image/png" href="assets/image/icon.png"/>
   <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
   <script>
     var config = {
       apiKey: "AIzaSyBPkF9A10-wUX8xmDAHMEXf0GyDTgTdw54",
@@ -27,11 +29,11 @@
 <div class="scoreCard-canvas">
 
   <div class='score-card'>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li class='score-0'><i class="fas fa-crown" style="color: yellow" ></i><b></b><small></small></li>
+    <li class='score-1'><i class="fas fa-crown" style="color: pink"   ></i><b></b><small></small></li>
+    <li class='score-2'><i class="fas fa-crown" style="color: white" ></i><b></b><small></small></li>
+    <li class='score-3'><i class="fas fa-crown" style="color: white" ></i><b></b><small></small></li>
+    <li class='score-4'><i class="fas fa-crown" style="color: white" ></i><b></b><small></small></li>
   </div>
 
 
@@ -48,7 +50,7 @@
     </ul>
     <canvas  id="myCanvas" width="400" height="400" style="border:3px solid #010329;"></canvas>
     <form  class='form' style="display: none;">
-      <input  required type="text" placeholder="enter your name"/>
+      <input  required type="text" placeholder="enter your name" style="margin-top:10px;font-size:15px;text-align:center;font-family:'Black Han Sans', sans-serif;"/>
       <input hidden type="button" value="Submit">
     </form>
   </div>

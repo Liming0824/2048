@@ -5,12 +5,50 @@
   flex-direction: column;
 }
 
+.score-card li{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  height: 80px;
+  line-height: 80px;
+  width: 250px;
+}
+
+.score-card li i{
+    display:block;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 80px;
+}
+
+.score-card li b{
+  display:block;
+  overflow: scroll;
+  margin-right: 10px;
+  font-size: 20px;
+  width: 100px;
+  font-family: 'Black Han Sans', sans-serif;
+  color: silver;
+}
+
+.score-card li small{
+  display:block;
+  font-size: 15px;
+  width: 100px;
+  overflow: scroll;
+  font-family: 'Black Han Sans', sans-serif;
+  color: silver;
+}
+
 .score-card{
+  z-index: 3;
   position: absolute;
-  margin-left: 30px;
-  margin-top: 56px;
-  width: 300px;
-  background-color: white;
+  margin-left: 100px;
+  margin-top: 98px;
+  width: 250px;
+  height: 400px;
+  background-color: rgba(0,0,0,0.7);
 }
 
 .scoreCard-canvas{
@@ -56,6 +94,7 @@ strong p{
 
 .body-canvas div p{
   color: white;
+  font-family: 'Black Han Sans', sans-serif;
 }
 
 .body-canvas ul{
@@ -128,7 +167,7 @@ body{
  .form{
    position: fixed;
    top: 415px;
-   right: 44%;
+   right: 43.5%;
  }
 
  .form input{
